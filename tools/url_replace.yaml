@@ -1,0 +1,51 @@
+identity:
+  name: url_replace
+  author: lfenghx
+  label:
+    en_US: url_replace
+    zh_Hans: url_replace
+    pt_BR: url_replace
+description:
+  human:
+    en_US: 实现url的批量替换
+    zh_Hans: 实现url的批量替换
+    pt_BR: 实现url的批量替换
+  llm: 实现url的批量替换
+parameters:
+  - name: txt_file
+    type: document
+    required: true
+    label:
+      en_US: txt file
+      zh_Hans: txt文件
+    human_description:
+      en_US: input txt file
+      zh_Hans: 上传txt文件
+    llm_description: 实现url的批量替换
+    form: llm
+  - name: prefix
+    type: string
+    required: true
+    label:
+      en_US: url prefix
+      zh_Hans: url前缀
+    human_description:
+      en_US: input url prefix
+      zh_Hans: 写入url前缀
+    llm_description: 实现url的批量替换
+    value: http://
+    form: llm
+  - name: suffix
+    type: string
+    required: true
+    label:
+      en_US: url suffix
+      zh_Hans: url后缀
+    human_description:
+      en_US: input url suffix
+      zh_Hans: 写入url后缀，比如jpg，png等
+    llm_description: 实现url的批量替换
+    form: llm
+extra:
+  python:
+    source: tools/url_replace.py

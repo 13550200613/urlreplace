@@ -1,0 +1,43 @@
+version: 0.0.1
+type: plugin
+author: lfenghx
+name: url_replace
+label:
+  en_US: url_replace
+  ja_JP: url_replace
+  zh_Hans: url_replace
+  pt_BR: url_replace
+description:
+  en_US: 实现url的批量替换
+  ja_JP: 实现url的批量替换
+  zh_Hans: 实现url的批量替换
+  pt_BR: 实现url的批量替换
+icon: url_replace.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/url_replace.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-05-06T21:28:50.9095829+08:00
+privacy: PRIVACY.md
+verified: false

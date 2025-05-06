@@ -1,0 +1,17 @@
+identity:
+  author: lfenghx
+  name: url_replace
+  label:
+    en_US: url_replace
+    zh_Hans: url_replace
+    pt_BR: url_replace
+  description:
+    en_US: 实现url的批量替换
+    zh_Hans: 实现url的批量替换
+    pt_BR: 实现url的批量替换
+  icon: url_replace.svg
+tools:
+  - tools/url_replace.yaml
+extra:
+  python:
+    source: provider/url_replace.py
